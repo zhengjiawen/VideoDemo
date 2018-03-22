@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_image"
+        android:src="@mipmap/image_icon"
+        android:layout_margin="40dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/login_image"
+        android:orientation="vertical"
+        android:id="@+id/login_linear"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:background="@drawable/input"
+            android:layout_margin="10dp"
+            android:id="@+id/account"
+            android:width="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入你的账号"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+
+        <EditText
+            android:background="@drawable/input"
+            android:layout_margin="10dp"
+            android:id="@+id/passward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:hint="输入你的密码"
+            android:gravity="center"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:background="@drawable/btn_login"
+            android:layout_margin="10dp"
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:width="@dimen/activity_horizontal_margin"
+            android:text="登录"
+            android:textSize="20sp"
+            android:layout_span="2"/>
+
+    </LinearLayout>
+</RelativeLayout>
