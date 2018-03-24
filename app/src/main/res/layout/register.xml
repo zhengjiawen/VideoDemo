@@ -4,54 +4,58 @@
     android:layout_height="match_parent"
 
     >
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login_image"
-        android:src="@drawable/x"
-        android:layout_margin="40dp"
-        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         android:layout_below="@+id/login_image"
         android:orientation="vertical"
         android:id="@+id/login_linear"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="100dp">
         <EditText
             android:background="@drawable/input"
             android:layout_margin="10dp"
-            android:id="@+id/account"
+            android:id="@+id/account1"
             android:width="@dimen/activity_horizontal_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="输入你的账号"
+            android:hint="请输入你的账号"
             android:gravity="center"
             android:textSize="20sp"/>
-
 
         <EditText
             android:background="@drawable/input"
             android:layout_margin="10dp"
-            android:id="@+id/passward"
+            android:id="@+id/passward1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:hint="输入你的密码"
+            android:textSize="20sp"
+            android:hint="请输入你的密码"
             android:gravity="center"
             android:inputType="textPassword"/>
+
+        <EditText
+            android:background="@drawable/input"
+            android:layout_margin="10dp"
+            android:id="@+id/passwardSure"
+            android:width="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请确认你的密码"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:inputType="textPassword" />
 
         <Button
             android:background="@drawable/btn_login"
             android:layout_margin="10dp"
             android:textStyle="bold"
-            android:id="@+id/login"
+            android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:width="@dimen/activity_horizontal_margin"
-            android:text="登录"
+            android:text="注册"
             android:textSize="30sp"
             android:layout_span="2"/>
 

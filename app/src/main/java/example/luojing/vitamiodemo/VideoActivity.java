@@ -29,7 +29,7 @@ import io.vov.vitamio.widget.VideoView;
 /**
  * Created by luojing on 2016/12/9.
  */
-public class VideoActivity extends AppCompatActivity implements View.OnClickListener {
+public class VideoActivity extends BaseActivity implements View.OnClickListener {
     private String path;
     private VideoView mVideoView;
     private MediaController mController;
@@ -158,7 +158,7 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    //没有布局中没有设置返回键，只能响应硬件返回按钮，你可根据自己的意愿添加一个。若全屏就切换为小屏
+    //布局中没有设置返回键，只能响应硬件返回按钮，你可根据自己的意愿添加一个。若全屏就切换为小屏
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && mIsFullScreen) {

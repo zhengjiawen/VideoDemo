@@ -6,10 +6,19 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="overlapAnchor">false</item>
     </style>
 
     <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Background">
+        <item name="android:background">@drawable/ii</item>
+    </style>
+
+    <style name="Background1">
+        <item name="android:background">@drawable/ll</item>
+    </style>
 
 </resources>
